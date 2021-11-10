@@ -1,109 +1,132 @@
-/* Указываем box sizing */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+    /* Указываем box sizing */
 
-/* Убираем внутренние отступы */
-ul[class],
-ol[class] {
-  padding: 0;
-}
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
 
-/* Убираем внешние отступы */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
+    /* Убираем внутренние отступы */
 
-/* Выставляем основные настройки по-умолчанию для body */
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
+    ul[class],
+    ol[class] {
+        padding: 0;
+    }
 
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
-  list-style: none;
-}
+    /* Убираем внешние отступы */
 
-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    ul[class],
+    ol[class],
+    li,
+    figure,
+    figcaption,
+    blockquote,
+    dl,
+    dd {
+        margin: 0;
+    }
 
-/* Упрощаем работу с изображениями */
-img {
-  max-width: 100%;
-  display: block;
-}
+    /* Выставляем основные настройки по-умолчанию для body */
 
-/* Указываем понятную периодичность в потоке данных у article*/
-article>*+* {
-  margin-top: 1em;
-}
+    body {
+        min-height: 100vh;
+        scroll-behavior: smooth;
+        text-rendering: optimizeSpeed;
+        line-height: 1.5;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
 
-/* Наследуем шрифты для инпутов и кнопок */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-.container {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-}
-.respons {
-  width: 350px;
-  background-color: #2D323E;
-  text-align: left;
-  color: white;
+    /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+
+    ul[class],
+    ol[class] {
+        list-style: none;
+    }
+
+    /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+
+    a:not([class]) {
+        text-decoration-skip-ink: auto;
+    }
+
+    /* Упрощаем работу с изображениями */
+
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
+    /* Указываем понятную периодичность в потоке данных у article*/
+
+    article>*+* {
+        margin-top: 1em;
+    }
+
+    /* Наследуем шрифты для инпутов и кнопок */
+
+    input,
+    button,
+    textarea,
+    select {
+        font: inherit;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    .container span {
+        font-size: 15px;
+    }
+
+    .container h2 {
+        margin-top: 30px;
+    }
+
+    .respons {
+        width: 350px;
+        background-color: #2D323E;
+        text-align: left;
+        color: #C6CCD1;
+    }
+
+    .respons1 {
+        margin-left: 30px;
+    }
 
 
+    .left div {
+        margin: 10px 30px;
+    }
 
-}
-.fa-skype{
-  color: blue;
-}
-.fa-linkedin-square{
-  color: blue;
-}
+    .left h1 {
+        color: #DAE0E9;
+        margin: 15px 30px 0px 30px;
+    }
 
-.right {
-  display: flex;
-  flex-wrap: wrap;
-}
+    .right h1 {
+        font-weight: 600;
+        font-family: "Poppins";
+    }
 
+    .respons a {
+        color: #C6CCD1 !important;
+        text-decoration: none
+    }
 
-.round {
-  border-radius: 100px; /* Радиус скругления */
-  border: 3px solid white; /* Параметры рамки */
-  box-shadow: 0 0 7px #666; /* Параметры тени */
-  width: 150px;
-  margin:10px 10px 10px 10px;
-  align-items: center;
-
-}
-hr{
-  margin: 10px;
-}
-
+    .respons1 a {
+        color: #000000 !important;
+        text-decoration: none
+    }
+ 
