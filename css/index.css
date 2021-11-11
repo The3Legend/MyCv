@@ -153,18 +153,23 @@ select {
     .container {
         display: block;
         width: auto;
+        height: auto;
     }
     .respons{
         width: auto;
+        height: auto;
+    }
+    .respons1{
+        margin-left: 0px;
     }
 }
 
-@media screen and (max-width: 350px) {
+/* @media screen and (max-width: 400px) {
     .container {
         display: block;
-        width: 375px;
+        width: 380px;
     }
     .respons{
         width: auto;
     }
-}
+} */
