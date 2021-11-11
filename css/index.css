@@ -95,7 +95,7 @@ select {
 }
 
 .contact-info {
-    width: 350px;
+    width: auto;
     background-color: #2D323E;
     text-align: left;
     color: #C6CCD1;
@@ -150,6 +150,12 @@ select {
     }
     .info-block{
         margin-left: 0px;
+        width: auto;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .contact-info img{
+        width: 100%;
     }
 }
 
