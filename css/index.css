@@ -1,132 +1,150 @@
-    /* Указываем box sizing */
+.dinamic_block {
+    transform: translate(0px, 50%);
+    opacity: 0;
+    transition: all, 0.7s ease 0.4s;
 
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-    }
+}
 
-    /* Убираем внутренние отступы */
+.dinamic_block._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
 
-    ul[class],
-    ol[class] {
-        padding: 0;
-    }
+/* Указываем box sizing */
 
-    /* Убираем внешние отступы */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    p,
-    ul[class],
-    ol[class],
-    li,
-    figure,
-    figcaption,
-    blockquote,
-    dl,
-    dd {
-        margin: 0;
-    }
+/* Убираем внутренние отступы */
 
-    /* Выставляем основные настройки по-умолчанию для body */
+ul[class],
+ol[class] {
+    padding: 0;
+}
 
-    body {
-        min-height: 100vh;
-        scroll-behavior: smooth;
-        text-rendering: optimizeSpeed;
-        line-height: 1.5;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 400;
-    }
+/* Убираем внешние отступы */
 
-    /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
 
-    ul[class],
-    ol[class] {
-        list-style: none;
-    }
+/* Выставляем основные настройки по-умолчанию для body */
 
-    /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
 
-    a:not([class]) {
-        text-decoration-skip-ink: auto;
-    }
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 
-    /* Упрощаем работу с изображениями */
+ul[class],
+ol[class] {
+    list-style: none;
+}
 
-    img {
-        max-width: 100%;
-        display: block;
-    }
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 
-    /* Указываем понятную периодичность в потоке данных у article*/
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
 
-    article>*+* {
-        margin-top: 1em;
-    }
+/* Упрощаем работу с изображениями */
 
-    /* Наследуем шрифты для инпутов и кнопок */
+img {
+    max-width: 100%;
+    display: block;
+}
 
-    input,
-    button,
-    textarea,
-    select {
-        font: inherit;
-    }
+/* Указываем понятную периодичность в потоке данных у article*/
 
-    .container {
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px;
-    }
+article>*+* {
+    margin-top: 1em;
+}
 
-    .container span {
-        font-size: 15px;
-    }
+/* Наследуем шрифты для инпутов и кнопок */
 
-    .container h2 {
-        margin-top: 30px;
-    }
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
 
-    .respons {
-        width: 350px;
-        background-color: #2D323E;
-        text-align: left;
-        color: #C6CCD1;
-    }
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
 
-    .respons1 {
-        margin-left: 30px;
-    }
+.container span {
+    font-size: 15px;
+}
+
+.container h2 {
+    margin-top: 30px;
+}
+
+.respons {
+    width: 350px;
+    background-color: #2D323E;
+    text-align: left;
+    color: #C6CCD1;
+}
+
+.respons1 {
+    margin-left: 30px;
+}
 
 
-    .left div {
-        margin: 10px 30px;
-    }
+.left div {
+    margin: 10px 30px;
+}
 
-    .left h1 {
-        color: #DAE0E9;
-        margin: 15px 30px 0px 30px;
-    }
+.left h1 {
+    color: #DAE0E9;
+    margin: 15px 30px 0px 30px;
+}
 
-    .right h1 {
-        font-weight: 600;
-        font-family: "Poppins";
-    }
+.right h1 {
+    font-weight: 600;
+    font-family: "Poppins";
+}
 
-    .respons a {
-        color: #C6CCD1 !important;
-        text-decoration: none
-    }
+.respons a {
+    color: #C6CCD1 !important;
+    text-decoration: none
+}
 
-    .respons1 a {
-        color: #000000 !important;
-        text-decoration: none
-    }
- 
+.respons1 a {
+    color: #000000 !important;
+    text-decoration: none
+}
+
+.flex {
+    display: flex;
+}
+
+.user-progress {
+    margin-left: 10px;
+}
